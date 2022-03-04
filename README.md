@@ -1,8 +1,9 @@
 Add this code to the parent function in the script.js file
 
 
-  window.onload = function() {
 
+    window.onload = function() {
+  
     let btn = document.createElement("button");
 
     btn.classList.add('product-color');
@@ -34,5 +35,5 @@ Add this code to the parent function in the script.js file
      
 
     });
-  }
+        }
 
