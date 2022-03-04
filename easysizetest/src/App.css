@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+  vertical-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.button{
+  font-size: 1em;
+
+  vertical-align: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 10em;
+
+}
+.modal{
+background: white;
+  backdrop-filter:  blur(8px);
+
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.productImage{
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+}
+
+.firstImageDiv{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 450px;
+  height: 200px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+
+.secondPageDiv{
+   display: grid;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 450px;
+  height: 200px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.overlayDiv{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4000000
+}
+
+
+.overlayDivSecond{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4000000
+}
+
+
+
+#details{
+  display: none;
+  flex-direction: column;
+}
+
+.content{
+  color: black;
+}
+.hidden{
+/*visibility: hidden;*/
+}
