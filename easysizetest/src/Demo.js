@@ -14,7 +14,9 @@ import SecondWidget from "./components/SecondWidget/secondwidget";
 function Demo({ _img, _data }) {
 
     const { imageurl, attributes } = jsonData;
+    const usingSplit = attributes.split(',');
 
+    let randomattribute = usingSplit[Math.floor(Math.random()*usingSplit.length)];
     const [firstScreen, setFirstScreen] = useState(<></>);
     const [secondScreen, setSecondScreen] = useState(<></>);
     const [isSecond, setIsSecond] = useState(false);
@@ -26,7 +28,7 @@ function Demo({ _img, _data }) {
 
     useEffect(() => {
         setFirstScreen(<FirstWidget img={imageurl} setIsSecond={setIsSecond} isSecond={isSecond} /> );
-        setSecondScreen(<SecondWidget data={attributes} setAllToFalse={setAllToFalse}  /> );
+        setSecondScreen(<SecondWidget data={randomattribute} setAllToFalse={setAllToFalse}  /> );
     },[_img,_data])
 
     return (
