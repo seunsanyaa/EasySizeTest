@@ -1,7 +1,6 @@
 import Modal from "./modal";
 import FirstWidget from "./FirstWidget/firstwidget";
 import {useState} from "react";
-import Page2 from "../pages/page2";
 
 
 const Home = () => {

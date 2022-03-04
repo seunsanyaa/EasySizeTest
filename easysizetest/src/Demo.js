@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import FirstWidget from "./components/FirstWidget/firstwidget";
 import Modal from "./components/modal";
-import {useState,useEffect} from "react";
+import React, {useState,useEffect} from "react";
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import jsonData from './data.json';
 
@@ -22,8 +22,11 @@ function Demo({ _img, _data }) {
     const [isSecond, setIsSecond] = useState(false);
 
     const setAllToFalse = () => {
+
+
         setSecondScreen(<></>);
         setFirstScreen(<></>);
+
     }
 
     useEffect(() => {
@@ -35,20 +38,7 @@ function Demo({ _img, _data }) {
     <div className="App">
         {isSecond ? secondScreen : firstScreen}
 
-        {/* <Router>
 
-            <Routes>
-                <Route exact path='/' exact element={<Home image="http://localhost:63342/fe_test_task-master/public/images/red.png"/>} />
-
-                <Route path='/page2' element={<SecondWidget data="seun"/>} />
-            </Routes>
-        </Router> */}
-
-
-
-
-
-        {/*<FirstWidget/>*/}
     </div>
   );
 }

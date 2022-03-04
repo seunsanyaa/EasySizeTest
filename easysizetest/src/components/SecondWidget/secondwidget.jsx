@@ -1,10 +1,8 @@
-import {useEffect, useState,useRef} from "react";
+import React, {useEffect, useState,useRef} from "react";
 
-import { SpinnerCircular } from 'spinners-react';
+
 function SecondWidget({ setAllToFalse , data }) {
-  //
-  // let attributes
-  // let randomattribute = attributes[Math.floor(Math.random()*attributes.length)];
+
 
 
   setInterval(() => {
@@ -18,35 +16,29 @@ function SecondWidget({ setAllToFalse , data }) {
     box.style.display = 'none';
 
   }, 2000);
-  //
-  // function selectMe(){
-  //
-  // }
 
 
-
-
-  // document.getElementById("_1234").checked = true;
     return (
       <div className="overlayDivSecond" >
         <div className="secondPageDiv">
 
           <div id="details">
 
+            {/*<form action="/demo.js" method="post">*/}
+
+            <h1> {data} </h1>
 
 
-            <h1>{data}</h1>
 
 
 
-            {/*<img   className="attribute" src="https://c.tenor.com/zP8THQcabS8AAAAM/gordon-ramsay-choice.gif"/>*/}
-            {/*/!**attribute/}*/}
 
-
-            <button onClick={setAllToFalse} >
+            <button  onClick={setAllToFalse}>
 
               Select me
             </button>
+
+            {/*</form>*/}
 
 
           </div>
